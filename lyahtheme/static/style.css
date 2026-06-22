@@ -1,13 +1,21 @@
 
 @import url('reset.css');
 
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
 
 body {
-   font-size:14px;
-   line-height:25px;
-   font-family:Arial, sans-serif;
+   font-size: 14px;
+   line-height: 25px;
+   font-family: Arial, sans-serif;
    background-image: url(bg.png);
-   padding: 50px 0 50px 0;
+   padding: 50px 16px;
 }
 
 .clear {
@@ -16,7 +24,7 @@ body {
 
 h1 {
     font-size:60px;
-    line-height:60px;
+    line-height:1.1;
     font-family:georgia, Arial, serif;
     margin-bottom:15px;
     font-weight:normal;
@@ -37,6 +45,28 @@ h3 {
     font-family:Arial, serif;
     color:#000;
     font-style:italic;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  h3 {
+    font-size: 14px;
+  }
+
+  .documentwrapper {
+    padding: 0 10px;
+  }
+
+  body {
+    padding: 20px 10px;
+  }
 }
 
 p {
@@ -111,9 +141,19 @@ em {
     color: #819500;
 }
 
-.highlight {
-	margin-left: 3ex;
-	margin-right: 3ex;
+.highlight {   
+   font-family: Consolas, "Courier New", monospace;
+   font-size: 14px;
+   line-height: 1.4;
+
+   margin: 0 3ex 25px 3ex;
+   padding: 1ex 2ex;
+
+   white-space: pre-wrap;
+   word-break: break-word;
+
+   overflow-x: auto;
+   overflow-y: auto;
 }
 
 ul {
@@ -133,8 +173,10 @@ ul p {
 }
 
 .documentwrapper {
-    width:800px;
-    margin:0px auto;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 16px;
 }
 
 
@@ -174,11 +216,15 @@ img.align-center {
 }
 
 .related ul {
-   display: table;
-   width: 800px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   width: 100%;
+   max-width: 800px;
    margin: 0 auto;
-   white-space: nowrap;
+   white-space: normal;
    list-style-type: none;
+   gap: 10px;
 }
 
 .related ul li {
@@ -196,10 +242,17 @@ img.align-center {
 .toctree-wrapper ul {
     list-style-type:decimal;
     font-family:arial,serif;
-    font-size:24px;
+    font-size:20px;
     padding-left: 30px;
     margin: 15px 0 25px 0;
     color:#408156 ;
+}
+
+@media (max-width: 768px) {
+  .toctree-wrapper ul {
+    font-size: 16px;
+    padding-left: 16px;
+  }
 }
 
 .toctree-wrapper ul > li {
@@ -253,16 +306,6 @@ img.align-center {
     color:#BD2A33;
 }
 
-
-.highlight {   
-   font-family:Consolas, "Courier New", monospace;
-   font-size:14px;
-   line-height:16px;
-   padding:5px;
-   margin-bottom:25px;
-   white-space: normal;
-}
-
 .note {
     padding: 5px 10px 5px 10px;
     background-color:#ffc;
@@ -283,9 +326,4 @@ img.align-center {
 .math {
    vertical-align: middle;
    padding: 0 1ex 0 1ex;
-}
-
-.highlight {
-	overflow: auto;
-    padding: 1ex 2ex 1ex 2ex;
 }

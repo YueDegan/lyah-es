@@ -19,7 +19,8 @@ a:hover {
 }
 
 a#main {
-    width: 800px;
+    width: 100%;
+    max-width: 800px;
     height: 600px;
     display: block;
     margin: 0 auto;
@@ -27,15 +28,21 @@ a#main {
     text-indent: -9999px;
     background-image: url(mainintro.png);
     cursor: pointer;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .wrapper {
-    width: 800px;
-    margin: 0px auto;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 16px;
 }
 
 .wrapper ul {
     list-style-type: none;
+    padding-left: 0;
 }
 
 #maina {
@@ -44,13 +51,39 @@ a#main {
 }
 
 .intro {
-    width: 550px;
+    width: 65%;
     float: left;
     text-align: left;
 }
 
 .go {
-    padding-left: 70px;
+    width: 35%;
     float: left;
     text-align: right;
+}
+
+@media (max-width: 768px) {
+
+    .intro,
+    .go {
+        float: none;
+        width: 100%;
+        text-align: left;
+        display: block;
+    }
+
+    a#main {
+        height: 300px;
+        background-size: contain;
+    }
+    
+    body {
+        background-size: cover;
+        background-position: center top;
+    }
+
+    #maina {
+        font-size: 28px;
+        line-height: 32px;
+    }
 }
