@@ -47,7 +47,7 @@ sphinx-build -b html source _build/html
 - `singlehtml`: Toda la documentación en un único archivo HTML
 - `text`: Salida en texto plano
 - `epub`: Formato de libro electrónico (EPUB)
-- `latex`: Formato de libro electrónico (EPUB) 
+- `latex`: Formato de libro LaTeX (LaTeX) 
 
 ### Constructores de integración (IDE / sistemas de ayuda)
 - `htmlhelp`: Genera archivos de ayuda HTML de Microsoft (.chm) **(requiere sphinxcontrib-htmlhelp)**
