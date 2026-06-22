@@ -4,7 +4,9 @@
 Traducción al español de la guía del lenguaje de programación Haskell para
 principiantes [Learn you a Haskell for great good!](http://learnyouahaskell.com/).
 
-Puedes ver la guía en [http://aprendehaskell.es](http://aprendehaskell.es)
+Puedes ver la guía en [http://aprendehaskell.es](http://aprendehaskell.es) (Original)
+
+Puedes ver la guía optimizada en [https://yuedegan.github.io/AprendeHaskell/](https://yuedegan.github.io/AprendeHaskell/) (Optimizada)
 
 # Sobre este proyecto
 Este repositorio es un proyecto de recuperación, mantenimiento y actualización de la guía ¡Aprende Haskell por el bien de todos!, una adaptación al español de Learn You a Haskell for Great Good.
